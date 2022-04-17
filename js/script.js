@@ -1,8 +1,3 @@
-const as = () => {
- return console.log("this is sampl");
-};
+const numerOfFilms =  window.prompt("Сколько фильмов вы посмотрели ");
 
-// document.querySelector('p').textContent = 'asgjggjg';
-
-console.log(`Это функция ${as}`);
-// console.log(typeof 123n)
+console.log(`Посмотрел  ${numerOfFilms} фильмов`);
