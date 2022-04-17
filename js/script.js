@@ -1,4 +1,4 @@
-const numerOfFilms = +window.prompt("Сколько фильмов вы посмотрели ");
+const numerOfFilms = +window.prompt("Сколько фильмов вы посмотрели, '' ");
 const lastFilm = window.prompt("Один из последних просмотренных фильмов?");
 const reyting = +window.prompt("На сколько оцените его?");
 
@@ -6,8 +6,8 @@ const reyting = +window.prompt("На сколько оцените его?");
 
 const personalMoviesDB = {
   count: numerOfFilms,
-  movies: "",
-  actors: "",
+  movies: {},
+  actors: {},
   genres: [],
   privat: false,
 };
