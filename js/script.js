@@ -1,6 +1,13 @@
-const numerOfFilms = +window.prompt("Сколько фильмов вы посмотрели, '' ");
-let lastFilm = window.prompt("Один из последних просмотренных фильмов?", "");
+let numerOfFilms;
+function start() {
+  numerOfFilms = +window.prompt("Сколько фильмов вы посмотрели, '' ");
+  while (numerOfFilms == "" || isNaN(numerOfFilms) || numerOfFilms == null) {
+    numerOfFilms = +window.prompt("Сколько фильмов вы посмотрели, '' ");
+  }
+}
+start();
 
+let lastFilm = window.prompt("Один из последних просмотренных фильмов?", "");
 while (lastFilm == "" || lastFilm.length > 50) {
   lastFilm = window.prompt("Один из последних просмотренных фильмов?", "");
 }
