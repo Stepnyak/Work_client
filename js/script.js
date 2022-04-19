@@ -27,18 +27,18 @@ if (col < 10) {
 } else {
   console.log("Произошла ошибка");
 }
+function showMyDB() {
+  if (personalMoviesDB.privat == false) {
+    console.log(personalMoviesDB);
+  }
+}
+showMyDB();
 
-// switch (personalMoviesDB.count) {
-//   case "< 10":
-//     console.log("Просмотрено довольно мало фильмов");
-//     break;
-//   case "= 10 && < 30":
-//     console.log("Просмотрено довольно мало фильмов");
-//     break;
-//   case "> 30":
-//     console.log("Вы киноман");
-//     break;
-//   default:
-//     console.log("Произошла ошибка");
-//     break;
-// }
+function writeYuorGenres() {
+  for (let i = 0; i < 3; i++) {
+ personalMoviesDB.genres[i] = prompt("Ваш любимый жанр под номером ${i}", "");
+  }
+}
+
+writeYuorGenres();
+console.log(personalMoviesDB);
