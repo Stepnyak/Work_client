@@ -35,8 +35,11 @@ function showMyDB() {
 showMyDB();
 
 function writeYuorGenres() {
-  for (let i = 0; i < 3; i++) {
- personalMoviesDB.genres[i] = prompt("Ваш любимый жанр под номером ${i}", "");
+  for (let i = 1; i <= 3; i++) {
+    personalMoviesDB.genres[i - 1] = prompt(
+      `Ваш любимый жанр под номером ${i}`,
+      ""
+    );
   }
 }
 
